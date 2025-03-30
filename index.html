@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health Tracker</h1>
+        <p class="quote" id="dailyQuote"></p>
+        <input type="date" id="date" readonly>
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <input type="number" id="caloriesIn" placeholder="Calories Consumed">
+        <input type="number" id="caloriesOut" placeholder="Calories Burned">
+        <div id="exercise-container">
+            <input type="text" class="exercise" placeholder="Exercise">
+        </div>
+        <button class="add-exercise" onclick="addExercise()">Add Exercise</button>
+        <input type="number" id="steps" placeholder="Steps Walked">
+        <input type="number" id="water" placeholder="Water Intake (ml)">
+        <button onclick="addEntry()">Add Entry</button>
+        <h3>View Entries:</h3>
+        <input type="date" id="searchDate">
+        <button class="view-entry" onclick="viewEntry()">View Entry</button>
+        <input type="month" id="searchMonth">
+        <button class="view-month" onclick="viewMonthEntries()">View Month Entries</button>
+        <canvas id="weightChart"></canvas>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Weight</th>
+                    <th>Calories In</th>
+                    <th>Calories Out</th>
+                    <th>Exercises</th>
+                    <th>Steps</th>
+                    <th>Water Intake</th>
+                </tr>
+            </thead>
+            <tbody id="entriesTable">
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+    <script src="graph.js"></script>
+</body>
+</html>

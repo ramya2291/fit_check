@@ -1,0 +1,70 @@
+body {
+   font-family: 'Poppins', sans-serif;
+   background-color: #f7d9e3;
+   text-align: center;
+   margin: 20px;
+}
+
+.container {
+   background: white;
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   max-width: 600px;
+   margin: auto;
+   overflow-x: auto;
+}
+
+input, button {
+   width: 100%;
+   padding: 10px;
+   margin: 10px 0;
+   border-radius: 5px;
+   border: none;
+   font-size: 16px;
+}
+
+button {
+   background-color: #ff4081;
+   color: white;
+   cursor: pointer;
+}
+
+.add-exercise {
+   background-color: #3b82f6;
+}
+
+.view-entry, .view-month {
+   background-color: #4caf50;
+}
+
+table {
+   width: 100%;
+   margin-top: 20px;
+   border-collapse: collapse;
+   overflow-x: auto;
+}
+
+th, td {
+   border: 1px solid #ddd;
+   padding: 10px;
+   text-align: center;
+   word-wrap: break-word;
+}
+
+th {
+   background-color: #ff4081;
+   color: white;
+}
+
+.quote {
+   font-style: italic;
+   font-size: 18px;
+   color: #3b82f6;
+   margin-top: 10px;
+}
+
+canvas {
+   max-width: 100%;
+   margin-top: 20px;
+}
